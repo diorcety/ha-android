@@ -17,6 +17,7 @@ object UrlUtil {
                     .scheme(httpUrl.scheme)
                     .host(httpUrl.host)
                     .port(httpUrl.port)
+                    .encodedPath(httpUrl.encodedPath)
                     .toString()
             } catch (e: IllegalArgumentException) {
                 throw MalformedHttpUrlException(
